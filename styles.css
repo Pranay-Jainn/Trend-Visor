@@ -1,0 +1,131 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3dbdb;
+}
+
+/* Navbar styles */
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444; /* Slightly lighter for contrast */
+    color: white;
+    padding: 30px; /* Increase padding */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Deeper shadow */
+}
+
+.nav .start {
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.125em;
+    font-size: 36px; /* Larger font */
+    margin-bottom: 25px; /* More space below */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+/* Input styles */
+.stock-input, .selectors {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.stock-input input, .selectors input {
+    width: 250px; /* Wider input fields */
+    height: 45px; /* Taller inputs */
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* More rounded */
+    transition: border-color 0.3s;
+}
+
+.stock-input input:focus, .selectors input:focus {
+    border-color: #E4002B;
+    outline: none;
+}
+
+.stock-input button, .selectors button {
+    height: 45px; /* Taller buttons */
+    font-size: 16px;
+    background-color: #E4002B;
+    color: white;
+    border: none;
+    border-radius: 8px; /* More rounded */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-left: 10px;
+    font-weight: bold; /* Bolder font */
+}
+
+.stock-input button:hover, .selectors button:hover {
+    background-color: #BA0C2F;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Content styles */
+.content {
+    background-color: #ffffff; /* Keep clean */
+    padding: 25px; /* More padding */
+    border: 1px solid #ccc; /* Add a subtle border */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.content .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555; /* Slightly lighter for contrast */
+    color: white;
+    padding: 20px; /* Increase padding */
+    border-radius: 10px; /* More rounded corners */
+    
+}
+
+.content .logo {
+    height: 100px;
+
+    /* margin-right: 10px; */
+}
+
+.content .company-name {
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+#description {
+    padding: 25px; /* More padding */
+    text-align: center;
+    font-family: Georgia, serif;
+    line-height: 1.5;
+    font-size: 18px; /* Slightly larger */
+    color: #333; /* Darker text */
+}
+
+/* Graphs content */
+#graphs-content, #main-content, #forecast-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.graph-card {
+    width: 90%; /* Wider graph cards */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Subtle border */
+    transition: transform 0.2s; /* Add animation */
+}
+
+.graph-card:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
